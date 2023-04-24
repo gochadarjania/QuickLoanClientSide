@@ -26,7 +26,7 @@ Ext.define('QuickLoan.view.main.AdminController', {
 
         Ext.Ajax.request({
             method: 'DELETE',
-            url: 'https://localhost:7259/Admin/LoanDelete/' + loan.id,
+            url: 'http://localhost:5127/Admin/LoanDelete/' + loan.id,
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('jwtToken')
@@ -47,7 +47,7 @@ Ext.define('QuickLoan.view.main.AdminController', {
         var loan = grid.getStore().getAt(rowIndex);
         Ext.Ajax.request({
             method: 'POST',
-            url: 'https://localhost:7259/Admin/Approve/' + loan.id,
+            url: 'http://localhost:5127/Admin/Approve/' + loan.id,
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + localStorage.getItem('jwtToken')

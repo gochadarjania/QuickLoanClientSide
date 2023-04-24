@@ -10,7 +10,7 @@ Ext.define('QuickLoan.view.addloan.AddLoanController', {
 
         Ext.Ajax.request({
             method: 'POST',
-            url: 'https://localhost:7259/Customer/LoanRequest',
+            url: 'http://localhost:5127/Customer/LoanRequest',
             headers: { 'Content-Type': 'application/json' },
             jsonData: form,
             headers: {

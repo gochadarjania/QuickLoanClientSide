@@ -9,7 +9,7 @@ Ext.define('QuickLoan.view.registration.RegistrationController', {
         var form = this.lookup('registrationform');
         Ext.Ajax.request({
             method: 'POST',
-            url: 'https://localhost:7259/User/UserRegistration',
+            url: 'http://localhost:5127/UserRegistration',
             headers: { 'Content-Type': 'application/json' },
             jsonData: {
                 Email: form.down('[name=email]').getValue(),

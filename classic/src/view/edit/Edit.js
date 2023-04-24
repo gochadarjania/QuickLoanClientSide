@@ -20,7 +20,7 @@ Ext.define('QuickLoan.view.EditWindow', {
 
         // Make an API call to retrieve the record data
         Ext.Ajax.request({
-            url: 'https://localhost:7259/Admin/GetLoan/' + id,
+            url: 'http://localhost:5127/Admin/GetLoan/' + id,
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -151,7 +151,7 @@ Ext.define('QuickLoan.view.EditWindow', {
                 var form = me.down('form').getForm().getValues();
                 console.log(form);
                 Ext.Ajax.request({
-                    url: 'https://localhost:7259/Admin/LoanUpdate',
+                    url: 'http://localhost:5127/Admin/LoanUpdate',
                     method: 'POST',
                     jsonData: form,
                     headers: {

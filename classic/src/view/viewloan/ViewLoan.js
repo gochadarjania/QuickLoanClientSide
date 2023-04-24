@@ -18,7 +18,7 @@ Ext.define('QuickLoan.view.ViewLoan', {
 
         // Make an API call to retrieve the record data
         Ext.Ajax.request({
-            url: 'https://localhost:7259/Customer/GetLoan/' + id,
+            url: 'http://localhost:5127/Customer/GetLoan/' + id,
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

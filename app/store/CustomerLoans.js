@@ -3,7 +3,7 @@ Ext.define('QuickLoan.store.CustomerLoans', {
     alias:'store.customerloans',
     proxy: {
         type: 'ajax',
-        url: 'https://localhost:7259/Customer/GetLoans' ,
+        url: 'http://localhost:5127/Customer/GetLoans' ,
         headers: {
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + localStorage.getItem('jwtToken')

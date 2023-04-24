@@ -8,7 +8,7 @@ Ext.define('QuickLoan.view.login.LoginController', {
         var form = this.lookup('loginform');
         Ext.Ajax.request({
             method: 'POST',
-            url: 'https://localhost:7259/User/UserLogin',
+            url: 'http://localhost:5127/User/UserLogin',
             headers: { 'Content-Type': 'application/json' },
             jsonData: {
                 Email: form.down('[name=email]').getValue(),
