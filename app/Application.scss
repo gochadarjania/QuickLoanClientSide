@@ -1,0 +1,25 @@
+/*
+ *  This file can be used to set variables and supply global styling.  View specific 
+ *  styling should be located the view's corresponding scss file.
+ */
+$enable-font-awesome: dynamic(true);
+
+// Define your custom styles here
+
+// Change color of delete icon
+.x-fa.fa-trash {
+  color: #b20606;
+}
+.x-fa.fa-check {
+    color: #038e33;
+    margin-left: 10px; 
+  }
+
+.fas.fa-pencil-alt {
+    color: #079bcc;
+    margin-left: 10px; 
+  }
+.x-fa.fa-eye {
+    color: #038e33;
+    margin-left: 10px; 
+  }
